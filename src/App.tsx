@@ -70,7 +70,7 @@ const toMinutes = (timeStr: string) => {
 // --- Static Data ---
 
 const SCHEDULE: Event[] = [
-  { id: '1', time: '13:50', title: 'Reception', description: '受付開始', icon: <Calendar className="w-4 h-4" /> },
+  { id: '1', time: '13:40', title: 'Reception', description: '受付開始', icon: <Calendar className="w-4 h-4" /> },
   { id: '2', time: '14:20', title: 'Ceremony', description: '挙式', icon: <Star className="w-4 h-4" /> },
   { id: '3', time: '15:20', title: 'Grand Entrance', description: '披露宴開宴・新郎新婦入場', icon: <Star className="w-4 h-4" /> },
   { id: '4', time: '17:50', title: 'Grand Finale', description: 'お披楽喜', icon: <Clock className="w-4 h-4" /> },
