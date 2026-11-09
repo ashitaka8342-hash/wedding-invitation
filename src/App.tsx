@@ -885,6 +885,7 @@ export default function App() {
                 <p className="text-sm text-champagne/60 leading-relaxed">
                   ビール / ワイン (赤・白) / ウィスキー<br/>
                   日本酒 / 焼酎 / カクテル各種<br/>
+                  日本酒 / 焼酎 / カクテル各種<br/>
                   ソフトドリンク各種
                 </p>
               </motion.div>
