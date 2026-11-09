@@ -425,7 +425,7 @@ export default function App() {
                 
                 <div className="space-y-6 mb-12">
                   <p className="text-champagne/85 text-lg md:text-xl font-serif leading-relaxed tracking-[0.03em]">
-                    本日はご多用の中 ご列席いただき<br/>
+                    ご多用の中 ご列席いただき<br/>
                     誠にありがとうございます
                   </p>
                   <p className="text-champagne/60 text-sm font-serif italic leading-relaxed tracking-[0.03em]">
