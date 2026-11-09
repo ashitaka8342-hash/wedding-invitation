@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold: #D4AF37;
+  --color-gold-light: #F1E5AC;
+  --color-night: #0A1128;
+  --color-teal: #3D4A4A;
+  --color-ivory: #D9D2C5;
+  --color-bronze: #CD7F32;
+  --color-amber: #FFBF00;
+  --color-terracotta: #B35A33;
+  --color-champagne: #F4E6D2;
+  --color-off-white: #FAF9F6;
+}
+
+@layer base {
+  body {
+    @apply bg-night text-champagne font-sans antialiased;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(0, 76, 84, 0.15) 0%, transparent 70%),
+      radial-gradient(circle at 100% 100%, rgba(205, 127, 50, 0.05) 0%, transparent 50%);
+  }
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-night);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 10px;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.amber-glow {
+  box-shadow: 0 0 20px rgba(255, 191, 0, 0.4);
+}
+
+.gold-text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-bronze via-gold to-bronze;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.bronze-text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-bronze via-gold to-bronze;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.ceramic-table {
+  background: radial-gradient(circle at 30% 30%, var(--color-ivory) 0%, #BDB5A7 100%);
+  box-shadow: 
+    inset -2px -2px 5px rgba(0,0,0,0.2),
+    inset 2px 2px 5px rgba(255,255,255,0.5),
+    0 4px 10px rgba(0,0,0,0.2);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.metallic-button {
+  background: linear-gradient(135deg, #CD7F32 0%, #D4AF37 50%, #CD7F32 100%);
+  box-shadow: 
+    0 4px 15px rgba(0,0,0,0.3),
+    inset 0 1px 1px rgba(255,255,255,0.3);
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
